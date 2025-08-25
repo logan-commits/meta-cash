@@ -3,51 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meta Cash</title>
+  <title>Meta Cash - Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <header>
-      <h1>Meta Cash</h1>
-    </header>
-
-    <nav>
-      <button class="tab-btn" data-tab="wallet">Wallet</button>
-      <button class="tab-btn" data-tab="history">History</button>
-      <button class="tab-btn" data-tab="card">Card</button>
-      <button class="tab-btn" data-tab="settings">Settings</button>
-    </nav>
-
-    <section id="wallet" class="tab active">
-      <h2>Balance</h2>
-      <p id="balance">$1000.00</p>
-      <button id="add-funds">Add Rewards</button>
-    </section>
-
-    <section id="history" class="tab">
-      <h2>Transaction History</h2>
-      <ul id="transactions">
-        <li>No transactions yet.</li>
-      </ul>
-    </section>
-
-    <section id="card" class="tab">
-      <h2>Meta Card</h2>
-      <div class="card-display">
-        <p>Card Number: 1234 5678 9012 3456</p>
-        <p>Exp: 12/30</p>
-        <p>MPC: 123</p>
-      </div>
-    </section>
-
-    <section id="settings" class="tab">
-      <h2>Settings</h2>
-      <label>
-        Username:
-        <input type="text" id="username" placeholder="Enter your name">
-      </label>
-    </section>
+  <div class="login-container">
+    <h1>Meta Cash</h1>
+    
+    <div id="form-container">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button id="login-btn">Log In</button>
+      <button id="signup-btn">Sign Up</button>
+      <p id="error" style="color:red;"></p>
+    </div>
   </div>
 
   <script src="app.js"></script>
